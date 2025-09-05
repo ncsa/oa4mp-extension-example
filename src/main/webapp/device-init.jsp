@@ -1,4 +1,8 @@
 <%--
+This is the page the user lands on when authenticating for the device flow. Feel free to
+customize it.
+
+
   User: Jeff Gaynor
   Date: 9/25/11
   Time: 6:42 PM

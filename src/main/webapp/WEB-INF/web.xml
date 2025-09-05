@@ -4,7 +4,14 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
                   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
+<!--
+     Deployment descriptor for OA4MP authentication using an extension of classes.
 
+     See: https://oa4mp.org/pdf/java-extension-to-oa4mp.pdf
+     See: https://oa4mp.org/server/configuration/authorization-servlet-configuration.html
+
+     See the README.md in this project for details.
+-->
     <display-name>The OA4MP Service</display-name>
 
     <servlet>

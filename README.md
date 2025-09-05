@@ -29,7 +29,7 @@ The example files are
 4. web.xml
 
 All of these are extremely minimalist (aka an application of *Kanso*) so that the actual structure of what needs done 
-is shown. In practice, the AuthenticationUtil extension you write may end up being
+is shown. In practice, the AuthenticationUtil extension you write may front
 an imposing database application that links users and various logins. However, any sufficiently
 complex example would hide the essential simplicity. For instance, we *could* have had some
 much more complex injection framwork do the bootstrapping work, but opted here for 
@@ -41,14 +41,19 @@ works, naught else.
 
 ## Deployment
 
-Simply run 
+Install OA4MP from the installer as per usual. The resulting configuration file supports
+this extension. You just create the oauth2.war with this project and deploy that. Now,
+simply run 
 
 `mvn clean install`
 
-from the main directory. The result will be `target\oauth2.war` which is the deployable
+from the main directory. The result will be `target/oauth2.war` which is the deployable
 OA4MP webapp. Be sure you have OA4MP configured (so a functional server configuration and
-such) and deploy it by copying it to the `$CATALINA_HOME\webapps` directory, where it
-should simply deploy on its own. You will need a client (the OA4MP CLC or command line client
-is a dandy choice) that is registered then simply start your preferred flow and log in. 
+such) and deploy it by copying it to the `$CATALINA_HOME/webapps` directory, where it
+should simply deploy on its own. You will need to register a client, then use that client 
+(the OA4MP CLC or command line client is a dandy choice) to start your preferred 
+flow and log in with the above default credentials. 
+
+Modify this project to your heart's content and reploy to Tomcat. 
 
 
